@@ -38,7 +38,7 @@ namespace FdxProductPlugin
                     IOrganizationServiceFactory serviceFactory = (IOrganizationServiceFactory)serviceProvider.GetService(typeof(IOrganizationServiceFactory));
                     IOrganizationService service = serviceFactory.CreateOrganizationService(context.UserId);
 
-                    //Get current user information....
+                    //Get current user information.....
                     step = 2;
                     WhoAmIResponse response = (WhoAmIResponse)service.Execute(new WhoAmIRequest());
 
